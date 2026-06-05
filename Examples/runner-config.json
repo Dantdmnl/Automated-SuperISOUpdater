@@ -1,0 +1,21 @@
+{
+  "LogLevel": "INFO",
+  "RetryCount": 3,
+  "TimeoutSeconds": 5400,
+  "HashThrottle": 4,
+  "IsoScanDepth": -1,
+  "IncludeIsoPattern": [
+    "*.iso"
+  ],
+  "ExcludeIsoPattern": [
+    "*beta*.iso",
+    "*test*.iso"
+  ],
+  "VerifyHashes": false,
+  "ValidateIsoHeaders": true,
+  "SkipPipUpgrade": false,
+  "InstallGpg": false,
+  "SkipGpgCheck": false,
+  "NonInteractive": false,
+  "SisouArgs": []
+}

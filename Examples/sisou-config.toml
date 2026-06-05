@@ -1,0 +1,23 @@
+# Example SISOU config passed with:
+#   pwsh -File .\sisou-runner.ps1 -ConfigFile .\Examples\sisou-config.toml
+#
+# SISOU paths are relative to this config file's directory. For a real Ventoy
+# drive, place this file on the drive or adjust `directory` values accordingly.
+
+directory = "."
+
+[OperatingSystems]
+enabled = true
+directory = "Operating_Systems"
+
+[OperatingSystems.Linux]
+enabled = true
+directory = "Linux"
+
+[OperatingSystems.Linux.Ubuntu]
+enabled = true
+# Available editions: "desktop", "live-server"
+editions = ["desktop"]
+# Available architectures: "amd64"
+archs = ["amd64"]
+name = "ubuntu-[[VER]]-[[EDITION]]-[[ARCH]]"
